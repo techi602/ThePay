@@ -1,0 +1,30 @@
+{
+  "name": "techi602/ThePay",
+  "version": "3.2.2",
+  "description": "ThePay composer PHP library",
+  "keywords": [
+    "thepay"
+  ],
+  "license": "DBAD",
+  "authors": [
+    {
+      "name": "Michal Vrchota",
+      "email": "michal.vrchota@w3w.cz"
+    }
+  ],
+  "type": "project",
+  "require": {
+    "php": ">=5.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.2.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "": [
+        "src/",
+        "src/helpers"
+      ]
+    }
+  }
+}
