@@ -1,10 +1,11 @@
 {
-  "name": "techi602/ThePay",
+  "name": "techi602/thepay",
   "version": "3.5.3",
   "description": "ThePay composer PHP library",
   "keywords": [
     "thepay"
   ],
+  "abandoned": "thepay/api-client",
   "license": "DBAD",
   "authors": [
     {
@@ -14,10 +15,7 @@
   ],
   "type": "project",
   "require": {
-    "php": ">=5.3"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "5.2.*"
+    "php": ">=8.0"
   },
   "autoload": {
     "psr-0": {

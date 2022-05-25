@@ -112,38 +112,42 @@ abstract class TpDataApiObject implements ArrayAccess {
 	/* *** ArrayAccess *** */
 
 	/**
-	 * @param string $offset
+	 * @param mixed $offset
 	 * @return bool
 	 */
-	public function offsetExists($offset) {
+	public function offsetExists($offset): bool
+	{
 		$keys = static::keys();
 		$offsetExists = in_array($offset, $keys);
 		return $offsetExists;
 	}
 
 	/**
-	 * @param string $offset
+	 * @param mixed $offset
 	 * @return mixed
 	 */
-	public function offsetGet($offset) {
+	public function offsetGet($offset): mixed
+	{
 		$getterName = 'get' . ucfirst($offset);
 		$value = $this->$getterName();
 		return $value;
 	}
 
 	/**
-	 * @param string $offset
+	 * @param mixed $offset
 	 * @param mixed $value
 	 */
-	public function offsetSet($offset, $value) {
+	public function offsetSet($offset, $value): void
+	{
 		$setterName = 'set' . ucfirst($offset);
 		$this->$setterName($value);
 	}
 
 	/**
-	 * @param string $offset
+	 * @param mixed $offset
 	 */
-	public function offsetUnset($offset) {
+	public function offsetUnset($offset): void
+	{
 		$this->offsetSet($offset, null);
 	}
 

@@ -1,12 +1,8 @@
-ThePay library
+ThePay 1.0 library
 =========================
 
-ported library from official source https://www.thepay.cz/ke-stazeni/
+ported library from official source https://old.thepay.cz/ke-stazeni/implementace/
+to provide composer support.
 
-This library is total disaster since ThePay programmers are seriously lacking experience with PHP
- - no tests
- - no composer support
- - accessing REQUEST params which can be hijacked by COOKIE
- - objects with public properties
- 
-*** nobody gives a damn if you ever release another ZIP package! This is so 2005! ***
+This is unsupported legacy API version. Use at your own risk. For modern ThePay support use supported library for API v2 here
+https://github.com/thepay/api-client
